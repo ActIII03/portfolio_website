@@ -1,0 +1,166 @@
+/*------------ Globals -----------------*/
+:root {
+  --back1: #65daf7;
+  --back2: #27ccf5;
+  --back3: #06a4cc;
+}
+/*------------ Media Queries -----------------*/
+@media (max-width: 1024px) {
+  p {
+    font-size: 10px !important;
+  }
+  a {
+    font-size: 18px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  p {
+    font-size: 8px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 468px) {
+  p {
+    font-size: 10px !important;
+  }
+  a {
+    font-size: 10px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+/*------------ Main Body -----------------*/
+.main-body {
+  display: flex;
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+.main-items {
+  width: 75%;
+}
+
+/*------------ NavBar -----------------*/
+.nav-bar {
+  width: 25%;
+  background-color: var(--back1);
+}
+
+.nav-bar .profile-pic {
+  margin: 0 0 0 0;
+  align-items: center;
+}
+
+.nav-bar img {
+  border-radius: 50%;
+}
+
+.nav-bar .profile-contact {
+  text-align: center;
+}
+
+.nav-bar .profile-contact > a {
+  margin: 0 1em 0 1em;
+  text-decoration: none;
+}
+
+.nav-bar .nav-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*------------ About -----------------*/
+.main-items .item1 {
+  display: flex;
+}
+
+.main-items .logo {
+  width: 50%;
+  background-color: var(--back1);
+}
+
+.main-items .bio {
+  width: 50%;
+  background-color: var(--back2);
+}
+
+/*------------ Work Experience -----------------*/
+.main-items .item2 {
+  background-color: var(--back3);
+}
+
+.main-items .item2 .card > img {
+  max-width: 25%;
+}
+
+.flip {
+  -webkit-perspective: 800;
+  backface-visibility: hidden;
+  perspective: 800;
+  text-align: center;
+}
+
+.flip .card.flipped {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  text-align: center;
+}
+
+.flip .card {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.flip .card .face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+
+.flip .card .front {
+  position: relative;
+  z-index: 1;
+}
+
+.flip .card .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background-color: white;
+  position: absolute;
+}
+
+.inner {
+  width: auto;
+}
+
+.job-description {
+  margin: 0;
+  font-size: small;
+  font-weight: bold;
+}
+
+/*------------ Projects -----------------*/
+.main-items .item3 {
+  background-color: var(--back2);
+}
+
+.proj-description {
+  margin: 0;
+  font-size: small;
+  font-weight: bold;
+}
+/*------------ Contacts -----------------*/
+.main-items .item4 {
+  background-color: var(--back3);
+}
