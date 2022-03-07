@@ -1,0 +1,57 @@
+.main-body {
+  display: flex;
+}
+
+.nav-bar {
+  width: 30%;
+  background-color: aliceblue;
+}
+
+.nav-bar .profile-pic {
+  top: 0;
+}
+.nav-bar .profile-contact {
+  top: 4em;
+}
+
+.nav-bar .navbar {
+  top: 6em;
+}
+
+.main-items {
+  margin: 0.5em 0 0 0.5em;
+  height: 2500px;
+  width: 70%;
+}
+
+.main-items > div {
+  height: 25%;
+}
+
+.main-items .item1 {
+  display: flex;
+}
+
+.main-items .logo {
+  width: 45%;
+}
+.main-items .bio {
+  width: 55%;
+}
+
+.main-items .item2 {
+  background-color: pink;
+}
+.main-items .item3 {
+  background-color: yellow;
+}
+.main-items .item4 {
+  background-color: red;
+}
+
+.main-items .item1 .logo {
+  background-color: aquamarine;
+}
+.main-items .item1 .bio {
+  background-color: royalblue;
+}
