@@ -14,7 +14,7 @@
   <body>
     <main class="main-body">
       <section class="main-items">
-        <div class="item1">
+        <div class="item1" id="about">
           <div class="logo">
             <h1>Logo</h1>
           </div>
@@ -22,35 +22,39 @@
             <h1>Bio</h1>
           </div>
         </div>
-        <div class="item2">
+        <div class="item2" id="experience">
           <h1>Work Experience</h1>
         </div>
-        <div class="item3">
+        <div class="item3" id="projects">
           <h1>Projects</h1>
         </div>
-        <div class="item4">
+        <div class="item4" id="contact">
           <h1>Contacts</h1>
         </div>
       </section>
       <section class="nav-bar">
-        <div class="container-fluid profile-pic sticky-top">
-          <h2>Image Here</h2>
-        </div>
-        <div class="container-fluid profile-contact sticky-top">
-          <h2>Contact Info Here</h2>
-        </div>
-        <nav class="navbar navbar-light sticky-top">
-          <div class="container-fluid">
-            <div class="navbar">
-              <div class="navbar-nav sticky-top">
-                <a class="nav-link" aria-current="page" href="#">About</a>
-                <a class="nav-link" href="#">Work Experience</a>
-                <a class="nav-link" href="#">Projects</a>
-                <a class="nav-link" href="#">Contact</a>
+        <div class="container-fluid m-1 sticky-top">
+          <div class="container-fluid profile-pic">
+            <img
+              src="assets/img/profile-pic.jpg"
+              class="img-fluid"
+              alt="avatar"
+            />
+          </div>
+          <div class="container-fluid profile-contact">
+            <h5>Contact Info Here</h5>
+          </div>
+          <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <div class="navbar-nav nav-items">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#experience">Work Experience</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </section>
     </main>
   </body>

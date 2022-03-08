@@ -1,27 +1,31 @@
 .main-body {
   display: flex;
+  height: 3500px;
 }
 
 .nav-bar {
-  width: 30%;
+  width: 25%;
   background-color: aliceblue;
 }
 
 .nav-bar .profile-pic {
-  top: 0;
+  margin: 1em 0 0 0;
+  align-items: center;
 }
+
+.nav-bar img {
+  border-radius: 50%;
+}
+
 .nav-bar .profile-contact {
-  top: 4em;
+  margin: 1em 0 0 0;
 }
 
 .nav-bar .navbar {
-  top: 6em;
 }
 
 .main-items {
-  margin: 0.5em 0 0 0.5em;
-  height: 2500px;
-  width: 70%;
+  width: 75%;
 }
 
 .main-items > div {
