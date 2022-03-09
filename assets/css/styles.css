@@ -1,5 +1,31 @@
-/*------------ Main Body -----------------*/
+/*------------ Globals -----------------*/
+:root {
+  --back1: #65daf7;
+  --back2: #27ccf5;
+  --back3: #06a4cc;
+}
+/*------------ Media Queries -----------------*/
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 468px) {
+  body {
+    font-size: 5px;
+  }
 
+  .main-items .item1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/*------------ Main Body -----------------*/
 .main-body {
   display: flex;
   height: 3500px;
@@ -21,7 +47,7 @@
 /*------------ NavBar -----------------*/
 .nav-bar {
   width: 25%;
-  background-color: aliceblue;
+  background-color: var(--back1);
 }
 
 .nav-bar .profile-pic {
@@ -54,25 +80,25 @@
 
 .main-items .logo {
   width: 50%;
-  background-color: aquamarine;
+  background-color: var(--back1);
 }
 
 .main-items .bio {
   width: 50%;
-  background-color: royalblue;
+  background-color: var(--back2);
 }
 
 /*------------ Work Experience -----------------*/
 .main-items .item2 {
-  background-color: pink;
+  background-color: var(--back3);
 }
 
 /*------------ Projects -----------------*/
 .main-items .item3 {
-  background-color: yellow;
+  background-color: var(--back2);
 }
 
 /*------------ Contacts -----------------*/
 .main-items .item4 {
-  background-color: red;
+  background-color: var(--back3);
 }
