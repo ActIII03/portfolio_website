@@ -1,8 +1,24 @@
+/*------------ Main Body -----------------*/
+
 .main-body {
   display: flex;
   height: 3500px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
+.main-items {
+  width: 75%;
+}
+
+.main-items > div:nth-child(1) {
+  height: 15%;
+}
+
+.main-items > div:nth-child(n + 2) {
+  height: 28.3%;
+}
+
+/*------------ NavBar -----------------*/
 .nav-bar {
   width: 25%;
   background-color: aliceblue;
@@ -18,44 +34,45 @@
 }
 
 .nav-bar .profile-contact {
-  margin: 1em 0 0 0;
+  text-align: center;
 }
 
-.nav-bar .navbar {
+.nav-bar .profile-contact > a {
+  margin: 0 1em 0 1em;
+  text-decoration: none;
 }
 
-.main-items {
-  width: 75%;
+.nav-bar .nav-link:hover {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.main-items > div {
-  height: 25%;
-}
-
+/*------------ About -----------------*/
 .main-items .item1 {
   display: flex;
 }
 
 .main-items .logo {
-  width: 45%;
-}
-.main-items .bio {
-  width: 55%;
+  width: 50%;
+  background-color: aquamarine;
 }
 
+.main-items .bio {
+  width: 50%;
+  background-color: royalblue;
+}
+
+/*------------ Work Experience -----------------*/
 .main-items .item2 {
   background-color: pink;
 }
+
+/*------------ Projects -----------------*/
 .main-items .item3 {
   background-color: yellow;
 }
+
+/*------------ Contacts -----------------*/
 .main-items .item4 {
   background-color: red;
-}
-
-.main-items .item1 .logo {
-  background-color: aquamarine;
-}
-.main-items .item1 .bio {
-  background-color: royalblue;
 }
