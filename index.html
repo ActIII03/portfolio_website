@@ -29,10 +29,10 @@
     <main class="main-body">
       <section class="main-items">
         <div class="item1" id="about">
-          <div class="text-center logo">
+          <div class="text-center pt-4 logo">
             <img
               src="assets/img/cover-page.png"
-              class="img-fluid mt-5 w-50"
+              class="img-fluid w-50"
               alt="logo"
             />
             <figure class="text-center">
@@ -66,14 +66,18 @@
             </div>
           </div>
         </div>
-        <div class="item2" id="experience">
+        <div class="container-fluid pt-5 item2" id="experience">
           <p class="h1">Work Experience</p>
-          <div class="row px-4 py-5 row-cols-1 row-cols-md-2 g-4 h-75">
+          <div class="row px-4 py-5 row-cols-1 row-cols-md-3 g-4 h-100 w-100">
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/psu_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Computer Science Tutor</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -83,10 +87,14 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/trec_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Peer Mentor</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -96,10 +104,14 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/ctran-symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Business Data-Analyst</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content.
@@ -108,10 +120,31 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/freegee_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Technical Support Intern</h5>
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card pt-3">
+                <img
+                  src="assets/img/usn_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Medical Department Representative</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -122,14 +155,18 @@
             </div>
           </div>
         </div>
-        <div class="item3" id="projects">
+        <div class="container-fluid pt-3 item3" id="projects">
           <p class="h1">Projects</p>
-          <div class="row px-4 py-5 row-cols-1 row-cols-md-2 g-4 h-75">
+          <div class="row px-4 py-5 row-cols-1 row-cols-md-3 g-4 h-75 w-75">
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/psu_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">GPU Crawler</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -139,10 +176,14 @@
               </div>
             </div>
             <div class="col">
-              <div class="card h-75">
-                <img src="..." class="card-img-top" alt="..." />
+              <div class="card pt-3">
+                <img
+                  src="assets/img/trec_symbol.jpeg"
+                  class="card-img-top mx-auto"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">RPI-cluster</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
                     natural lead-in to additional content. This content is a
@@ -153,42 +194,34 @@
             </div>
           </div>
         </div>
-        <div class="item4" id="contact">
+        </div>
+        <div class="container-fluid pt-3 item4" id="contact">
           <p class="h1">Contacts</p>
           <form class="p-5">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
+              <label for="fullname" class="form-label"
+                >Full Name</label
               >
               <input
-                type="email"
+                type="text"
                 class="form-control"
-                id="exampleInputEmail1"
+                id="name-input"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="fullname" class="form-label"
+                >Email</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name-input"
                 aria-describedby="emailHelp"
               />
               <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
+                I'll never share your email with anyone else.
               </div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
