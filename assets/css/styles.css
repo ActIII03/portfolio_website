@@ -29,7 +29,7 @@
 .main-body {
   display: flex;
   height: 3500px;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif !important;
 }
 
 .main-items {
