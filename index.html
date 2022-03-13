@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>touche-hub</title>
     <!-- Bootstrap v5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -23,13 +24,14 @@
       src="https://kit.fontawesome.com/74514071f5.js"
       crossorigin="anonymous"
     ></script>
-    <title>touche-hub</title>
+    <!-- javascript -->
+    <script defer src="assets/js/app.js"></script>
   </head>
   <body>
     <main class="main-body">
       <section class="main-items">
         <div class="item1" id="about">
-          <div class="text-center pt-4 logo">
+          <div class="container-fluid text-center pt-4 logo">
             <img
               src="assets/img/cover-page.png"
               class="img-fluid w-50"
@@ -45,14 +47,14 @@
             </figure>
           </div>
           <div class="container-fluid bio px-3">
-            <div class="p-2 my-5">
-              <p class="h2 mb-4">About Me</p>
+            <div class="p-2">
+              <p class="h2">About Me</p>
               <div class="p-2">
-                <p class="h4">
+                <p class="fs-7">
                   Hello, I am <em>Armant Touche</em>. Thanks for viewing my
                   site.
                 </p>
-                <p class="fs-6 py-4">
+                <p class="py-4">
                   I am a student veteran attending Portland State University
                   pursuing a Bachelor of Science in Computer Science with a
                   focus on Software Engineering/DevOps. Looking to be part of a
@@ -67,8 +69,10 @@
           </div>
         </div>
         <div class="container-fluid pt-5 item2" id="experience">
-          <p class="h1">Work Experience</p>
-          <div class="row px-4 py-5 row-cols-1 row-cols-md-3 g-4 h-100 w-100">
+          <p class="h1 mb-5">Work Experience</p>
+          <div
+            class="row overflow-auto px-4 py-5 row-cols-1 row-cols-md-3 g-4 w-100"
+          >
             <div class="col">
               <div class="card pt-3">
                 <img
@@ -76,13 +80,17 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Computer Science Tutor</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pt-2">Computer Science Tutor</h5>
+                  <p class="card-text">(September 2021 - Present)</p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Job Description
+                  </button>
                 </div>
               </div>
             </div>
@@ -93,13 +101,17 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Peer Mentor</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pt-2">Peer Mentor</h5>
+                  <p class="card-text">(June 2021 - September 2021)</p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Job Description
+                  </button>
                 </div>
               </div>
             </div>
@@ -110,12 +122,17 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Business Data-Analyst</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pt-2">Business Data-Analyst</h5>
+                  <p class="card-text">(November 2019 - March 2020)</p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Job Description
+                  </button>
                 </div>
               </div>
             </div>
@@ -126,13 +143,17 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Technical Support Intern</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pt-2">Technical Support Intern</h5>
+                  <p class="card-text">(May 2019, November 2019)</p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Job Description
+                  </button>
                 </div>
               </div>
             </div>
@@ -143,21 +164,29 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Medical Department Representative</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pt-2">
+                    Medical Department Representative
+                  </h5>
+                  <p class="card-text">(June 2015, December 2017)</p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Job Description
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="container-fluid pt-3 item3" id="projects">
-          <p class="h1">Projects</p>
-          <div class="row px-4 py-5 row-cols-1 row-cols-md-3 g-4 h-75 w-75">
+          <p class="h1 mb-5">Projects</p>
+          <div
+            class="row overflow-auto px-4 py-5 row-cols-1 row-cols-md-3 g-4 w-75"
+          >
             <div class="col">
               <div class="card pt-3">
                 <img
@@ -166,12 +195,15 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">GPU Crawler</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                  <h5 class="card-title text-center">GPU Crawler</h5>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Info
+                  </button>
                 </div>
               </div>
             </div>
@@ -182,13 +214,16 @@
                   class="card-img-top mx-auto"
                   alt="..."
                 />
-                <div class="card-body">
+                <div class="card-body text-center">
                   <h5 class="card-title">RPI-cluster</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+                </div>
+                <div class="container text-center pb-1">
+                  <button
+                    type="button"
+                    class="btn text-center btn-info btn-sm w-50"
+                  >
+                    Info
+                  </button>
                 </div>
               </div>
             </div>

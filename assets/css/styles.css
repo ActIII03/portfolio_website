@@ -5,43 +5,33 @@
   --back3: #06a4cc;
 }
 /*------------ Media Queries -----------------*/
-@media (max-width: 1024px) {
-  body {
-    font-size: 15px;
-  }
-}
 @media (max-width: 768px) {
-  body {
-    font-size: 12px;
+  p {
+    font-size: 10px;
+  }
+  i {
+    font-size: 20px;
   }
 }
 @media (max-width: 468px) {
-  body {
-    font-size: 5px;
+  p {
+    font-size: 10px !important;
   }
-
-  .main-items .item1 {
-    display: flex;
-    flex-wrap: wrap;
+  a {
+    font-size: 10px;
+  }
+  i {
+    font-size: 20px;
   }
 }
 /*------------ Main Body -----------------*/
 .main-body {
   display: flex;
-  height: 3500px;
   font-family: "IBM Plex Sans", sans-serif !important;
 }
 
 .main-items {
   width: 75%;
-}
-
-.main-items > div:nth-child(1) {
-  height: 15%;
-}
-
-.main-items > div:nth-child(n + 2) {
-  height: 28.3%;
 }
 
 /*------------ NavBar -----------------*/
@@ -95,7 +85,6 @@
 
 .main-items .item2 .card > img {
   max-width: 25%;
-  max-height: 25%;
 }
 
 /*------------ Projects -----------------*/
