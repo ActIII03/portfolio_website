@@ -100,11 +100,14 @@
 
 .flip {
   -webkit-perspective: 800;
+  backface-visibility: hidden;
   perspective: 800;
   text-align: center;
 }
 
 .flip .card.flipped {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
@@ -128,9 +131,13 @@
 }
 
 .flip .card .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  background-color: white;
   position: absolute;
+  z-index: 2;
 }
 
 .inner {
