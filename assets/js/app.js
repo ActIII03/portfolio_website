@@ -1,9 +1,9 @@
 // job description
-let jobInfo = document.querySelectorAll(".card");
+let cardInfo = document.querySelectorAll(".flip");
 
-for (let i = 0; i < jobInfo.length; i++) {
-  jobInfo[i].addEventListener("mouseover", flipCard);
-  jobInfo[i].addEventListener("mouseout", unflipCard);
+for (let i = 0; i < cardInfo.length; i++) {
+  cardInfo[i].addEventListener("mouseover", flipCard);
+  cardInfo[i].addEventListener("mouseout", unflipCard);
 }
 
 function flipCard(event) {
