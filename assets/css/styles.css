@@ -94,8 +94,8 @@
 }
 
 .flip .card.flipped {
-  -webkit-transform: rotatey(-180deg);
-  transform: rotatey(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 .flip .card {
@@ -117,8 +117,8 @@
 }
 
 .flip .card .back {
-  -webkit-transform: rotatey(-180deg);
-  transform: rotatey(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
   position: absolute;
 }
 
