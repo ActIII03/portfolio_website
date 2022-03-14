@@ -1,21 +1,28 @@
 // job description
-let jobInfo = document.querySelectorAll(".job-card");
+let jobInfo = document.querySelectorAll(".card");
 
-for (let i = 0; i < jobInfo.length; i++)
-  jobInfo[i].addEventListener("click", handleJobSubmit);
+for (let i = 0; i < jobInfo.length; i++) {
+  jobInfo[i].addEventListener("mouseover", flipCard);
+  jobInfo[i].addEventListener("mouseout", unflipCard);
+}
 
-function handleJobSubmit(event) {
-  console.log("Fuck You");
+function flipCard(event) {
+  let cardFlip =
+    event.target.parentElement.parentElement.parentElement.parentElement;
+
+  console.log(
+    event.target.parentElement.parentElement.parentElement.parentElement
+  );
+
+  cardFlip.classList.toggle("flipped");
+
   return true;
 }
 
-// project description
-let projInfo = document.querySelectorAll(".proj-card");
-
-for (let i = 0; i < projInfo.length; i++)
-  projInfo[i].addEventListener("click", handleProjSubmit);
-
-function handleProjSubmit(event) {
-  console.log("Fuck You2");
-  return true;
+function unflipCard(event) {
+  let cardFlip =
+    event.target.parentElement.parentElement.parentElement.parentElement;
+  setTimeout(function () {
+    cardFlip.classList.remove("flipped");
+  }, 8000);
 }
