@@ -52,7 +52,7 @@
 }
 
 .nav-bar .profile-pic {
-  margin: 1em 0 0 0;
+  margin: 0 0 0 0;
   align-items: center;
 }
 
@@ -110,6 +110,7 @@
   backface-visibility: hidden;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
+  text-align: center;
 }
 
 .flip .card {
@@ -137,7 +138,6 @@
   transform: rotateY(-180deg);
   background-color: white;
   position: absolute;
-  z-index: 2;
 }
 
 .inner {
@@ -155,6 +155,11 @@
   background-color: var(--back2);
 }
 
+.proj-description {
+  margin: 0;
+  font-size: small;
+  font-weight: bold;
+}
 /*------------ Contacts -----------------*/
 .main-items .item4 {
   background-color: var(--back3);
