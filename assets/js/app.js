@@ -24,5 +24,5 @@ function unflipCard(event) {
     event.target.parentElement.parentElement.parentElement.parentElement;
   setTimeout(function () {
     cardFlip.classList.remove("flipped");
-  }, 8000);
+  }, 12000);
 }
