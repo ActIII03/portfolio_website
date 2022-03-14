@@ -112,6 +112,7 @@
 }
 
 .flip .card .front {
+  position: relative;
   z-index: 1;
 }
 
@@ -120,6 +121,7 @@
   transform: rotatey(-180deg);
   position: absolute;
 }
+
 .inner {
   width: auto;
 }
