@@ -5,9 +5,20 @@
   --back3: #06a4cc;
 }
 /*------------ Media Queries -----------------*/
+@media (max-width: 1024px) {
+  p {
+    font-size: 10px !important;
+  }
+  a {
+    font-size: 18px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
 @media (max-width: 768px) {
   p {
-    font-size: 10px;
+    font-size: 8px;
   }
   i {
     font-size: 20px;
@@ -127,6 +138,7 @@
 }
 
 .job-description {
+  margin: 0;
   font-size: small;
   font-weight: bold;
 }
